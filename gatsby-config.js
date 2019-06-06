@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `VideoProdukcia Tomáš Hanzlík`,
+    title: `Tomáš Hanzlík`,
     description: `Videoprodukcia firemných eventov, svadobných videi, reklamnych spotov a videoklipov`,
     author: `@TomasHanzlik`,
   },
