@@ -1,0 +1,13 @@
+.counter {
+    width: 60px;
+    height: 25px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;    
+}
+
+.counter:hover {
+    visibility: visible;
+    display: block;
+}
+
