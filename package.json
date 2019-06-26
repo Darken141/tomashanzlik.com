@@ -16,13 +16,19 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-ga": "^2.6.0",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
     "prettier": "^1.17.1"
   },
   "keywords": [
-    "gatsby", "tomas", "hanzlik", "produkcie", "video", "videoklip"
+    "gatsby",
+    "tomas",
+    "hanzlik",
+    "produkcie",
+    "video",
+    "videoklip"
   ],
   "license": "MIT",
   "scripts": {
