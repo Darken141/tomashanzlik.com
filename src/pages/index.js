@@ -10,7 +10,7 @@ import './index.css';
 
 function initializeReactGA() {
   ReactGA.initialize('UA-142792433-1');
-  ReactGA.pageview('/homepage');
+  ReactGA.pageview('/');
 }
 
 
