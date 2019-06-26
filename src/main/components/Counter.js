@@ -11,7 +11,7 @@ const Counter = () => {
             <br/>
 
             <a href="http://www.hitwebcounter.com" title="" target="_blank" rel="noopener noreferrer"><>                                        </>
-            </a>  
+            </a>    
         </div>                      
     )
 }
