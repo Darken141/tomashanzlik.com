@@ -8,9 +8,9 @@ import '../main/main.css';
 
 import './index.css';
 
-function initializeReactGA() {
+const initializeReactGA = () => {
   ReactGA.initialize('UA-142792433-1');
-  ReactGA.pageview('/');
+  ReactGA.pageview('/homepage');
 }
 
 
@@ -20,8 +20,7 @@ const IndexPage = () => (
     <main className="container">
       <SEO title="Produkcie" />
       <Productions/>  
-      </main>  
-      <Counter/>
+    </main>  
   </div>
 
 )
