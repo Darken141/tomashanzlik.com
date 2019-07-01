@@ -25,7 +25,7 @@ module.exports = {
         // Set Variation ID. 0 for original 1,2,3....
         variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
         // Any additional create only fields (optional)
-        sampleRate: 5,
+        sampleRate: 100,
         siteSpeedSampleRate: 10,
         cookieDomain: "tomashanzlik.com",
       },
