@@ -1,0 +1,52 @@
+@import './variablies';
+
+/* primary color #303841 */
+/* secondary color #00adb5 */
+/* text color #eeeeee */
+/* third color #ff5722 */
+
+/* #343d46	(52,61,70)
+#4f5b66	(79,91,102)
+#65737e	(101,115,126)
+#a7adba	(167,173,186)
+#c0c5ce	(192,197,206) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  // background: url("./assets/pozadie_compress.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($color-black, 0.4);
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+}
+
+@media all and (max-width: 480px) {
+}

@@ -3,13 +3,43 @@ module.exports = {
     title: `Tomáš Hanzlík`,
     description: `Videoprodukcia firemných eventov, svadobných videi, reklamnych spotov a videoklipov`,
     author: `@TomasHanzlik`,
+    productions: [
+      {
+      id: `1`,
+      title: `Hanzlik.sk`,
+      description: `Hlavná a zároveň všeobecne zameraná produkcia na tvorenie videoklipov, reklamných videi, aftermovie's a podobne zameraných videí.`,
+      url: `http://www.hanzlik.sk`,
+      image: `hanzlik`
+      }, 
+      {
+        id: `2`,
+        title: `Svadobná produkcia`,
+        description: `Produkcia zameraná na tvorbu profesionálnych svadobných videí. Produkcia disponuje rozsiahlym tímom kameramanov.`,
+        url: `http://www.svadobnaprodukcia.sk/`,
+        image: `svadobna`
+      },
+      {
+        id: `3`,
+        title: `Stužková produkcia`,
+        description: `Produkcia zameraná na tvorbu profesionálnych videí zo Stužkových slávností. Produkcia poskytuje rôzne balíčky pre študentov.`,
+        url: `http://www.svadobnaprodukcia.sk/`,
+        image: `stuzkova`
+      },
+      {
+        id: `4`,
+        title: `Visuals for sale`,
+        description: `Produkcia zameraná na tvorbu a predaj vizuálov a "one take" videoklipov.`,
+        url: `http://www.svadobnaprodukcia.sk/`,
+        image: `visuals`
+      }
+    ]
   },
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
         trackingId: "UA-142792433-1",
       },
     },
@@ -22,18 +52,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/ikona.png`, // This path is relative to the root of the site.
-      },
-    },
+    `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
