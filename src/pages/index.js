@@ -47,9 +47,9 @@ const IndexPage = () => {
 
   return (
     <main className="production-container">
-      <div  className='production-container__background'>
+      
       <Img fluid={data.file.childImageSharp.fluid} className='production-container__background'/>
-      </div>
+      
         <SEO title="Produkcie" />
         <div className='production-container__row'>
           {
