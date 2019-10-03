@@ -15,7 +15,7 @@ const ProductionCard = ({handleClick, title, description, url, image}) => {
                     href={url} 
                     target="_blank"
                 >
-                    Preisť!
+                    Prejsť!
                 </a>
             </div>
         </div>
