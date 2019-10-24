@@ -1,11 +1,9 @@
 import React from "react"
 import SEO from "../components/seo"
 import { graphql, useStaticQuery } from 'gatsby'
-import Img from 'gatsby-image';
-
+import Layout from '../components/layout';
 import ProductionCard from '../components/production_card/production_card';
 
-import '../styles/main.scss';
 import './index.scss';
 
 const IndexPage = () => {
@@ -23,15 +21,8 @@ const IndexPage = () => {
           image
         }
       }
-    },
-    file(relativePath: {eq: "pozadie_compress.jpg"}){
-      childImageSharp{
-        fluid(fit: COVER){
-          ...GatsbyImageSharpFluid
-        }
-      }
     }
-  }  
+  }
   `
   )
 
@@ -46,14 +37,23 @@ const IndexPage = () => {
   })
 
   return (
-    <main className="production-container">
-      <div  className='production-container__background'>
-      <Img fluid={data.file.childImageSharp.fluid} className='production-container__background'/>
-      </div>
-        <SEO title="Produkcie" />
-        <div className='production-container__row'>
-          {
-            topRow.map(({id, title, description, url, image}) => (
+    <Layout>
+          <SEO title="Produkcie" />
+          <div className='production-container__row'>
+            {
+              topRow.map(({id, title, description, url, image}) => (
+                <ProductionCard 
+                  key={id}
+                  title={title}
+                  description={description}
+                  url={url}
+                  image={image}
+                />
+              ))
+            }
+          </div>
+          <div className='production-container__row'>
+            {bottomRow.map(({id, title, description, url, image}) => (
               <ProductionCard 
                 key={id}
                 title={title}
@@ -61,22 +61,14 @@ const IndexPage = () => {
                 url={url}
                 image={image}
               />
-            ))
-          }
-        </div>
-        <div className='production-container__row'>
-          {bottomRow.map(({id, title, description, url, image}) => (
-            <ProductionCard 
-              key={id}
-              title={title}
-              description={description}
-              url={url}
-              image={image}
-            />
-          ))}
-        </div>
-    </main>  
+            ))}
+          </div>
+    </Layout>
   )   
 }
 
-export default IndexPage
+export default IndexPage;
+
+// <div  className='production-container__background'>
+// <Img fluid={data.file.childImageSharp.fluid} className='production-container__background'/>
+// </div>

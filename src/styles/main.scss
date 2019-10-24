@@ -22,23 +22,9 @@ html {
 }
 
 body {
-  position: relative;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
-  // background: url("./assets/pozadie_compress.jpg") no-repeat center center;
-  background-size: cover;
   width: 100%;
-  // min-height: 100vh;
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba($color-black, 0.4);
-  }
 }
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {}
