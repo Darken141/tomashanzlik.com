@@ -15,7 +15,7 @@ import './layout.styles.scss';
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
   {
-    file(relativePath: {eq: "pozadie_compress.jpg"}){
+    file(relativePath: {eq: "2.jpg"}){
       childImageSharp{
         fluid(maxWidth: 1990){
           ...GatsbyImageSharpFluid
