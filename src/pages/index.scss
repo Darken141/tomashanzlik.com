@@ -10,4 +10,15 @@ main {
     width: 100%;
     min-height: 100vh;
     padding: 4rem 0;
+
+    .production-container__row {
+        :first-child{
+            margin-bottom: 2rem;
+        }
+
+        :last-child{
+            // margin-bottom: 0;
+        }
+    }
 }
+
