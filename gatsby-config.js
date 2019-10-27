@@ -22,14 +22,14 @@ module.exports = {
         id: `3`,
         title: `Stužková produkcia`,
         description: `Produkcia zameraná na tvorbu profesionálnych videí zo Stužkových slávností. Produkcia poskytuje rôzne balíčky pre študentov.`,
-        url: `http://www.svadobnaprodukcia.sk/`,
+        url: `http://www.hanzlik.sk`,
         image: `stuzkova`
       },
       {
         id: `4`,
         title: `Visuals for sale`,
         description: `Produkcia zameraná na tvorbu a predaj vizuálov a "one take" videoklipov.`,
-        url: `http://www.svadobnaprodukcia.sk/`,
+        url: `http://www.instagram.com/visualsforsale`,
         image: `visuals`
       }
     ]
