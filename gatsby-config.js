@@ -7,7 +7,7 @@ module.exports = {
       {
       id: `1`,
       title: `Hanzlik.sk`,
-      description: `Hlavná a zároveň všeobecne zameraná produkcia na tvorenie videoklipov, reklamných videi, aftermovie's a podobne zameraných videí.`,
+      description: `Hlavná a zároveň všeobecne zameraná produkcia na tvorenie videoklipov, reklamných videí, aftermovie's a podobne zameraných projektov.`,
       url: `http://www.hanzlik.sk`,
       image: `hanzlik`
       }, 
