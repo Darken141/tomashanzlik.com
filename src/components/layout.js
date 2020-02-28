@@ -5,36 +5,35 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import BackgroundImage from 'gatsby-background-image'
-import { graphql, useStaticQuery } from 'gatsby'
-
+import React from 'react';
+import BackgroundImage from 'gatsby-background-image';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import './layout.styles.scss';
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-  {
-    file(relativePath: {eq: "2.jpg"}){
-      childImageSharp{
-        fluid(maxWidth: 1990){
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }  
-  `
-  )
+	const data = useStaticQuery(graphql`
+		{
+			file(relativePath: { eq: "2.png" }) {
+				childImageSharp {
+					fluid(maxWidth: 1990) {
+						...GatsbyImageSharpFluid
+					}
+				}
+			}
+		}
+	`);
 
-  return(
-  <BackgroundImage 
-    Tag="section"
-    className='production-container__background'
-    fluid={data.file.childImageSharp.fluid}
-    backgroundColor={`#040e18`}
-  >
-    <main>{children}</main>
-  </BackgroundImage>
-)}
+	return (
+		<BackgroundImage
+			Tag="section"
+			className="production-container__background"
+			fluid={data.file.childImageSharp.fluid}
+			backgroundColor={`#040e18`}
+		>
+			<main>{children}</main>
+		</BackgroundImage>
+	);
+};
 
-export default Layout
+export default Layout;
