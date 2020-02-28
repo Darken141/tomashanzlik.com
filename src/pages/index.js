@@ -31,7 +31,7 @@ const IndexPage = () => {
 			id: `3`,
 			title: `Život kameramana`,
 			description: `Projekt v ktorom odhaľujem zákulisie práce kameramana, ukazujem proces tvorby videí a dávam všemožné tipy začínajúcim kameramanom.`,
-			url: `hhttps://www.youtube.com/channel/UC2_YjivupAOSCw-owoE5hGg`,
+			url: `https://www.youtube.com/channel/UC2_YjivupAOSCw-owoE5hGg`,
 			image: zivotKameramanaImage
 		},
 		{
