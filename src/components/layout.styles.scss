@@ -17,11 +17,18 @@ body {
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 1.6rem;
 	color: $color-white;
+	min-height: auto;
+	// overflow: hidden;
 }
 
-.production-container__background {
+.background__container {
 	width: 100%;
 	min-height: 100vh;
-	height: 100%;
+	// height: inherit;
+	background-image: url("../images/2.png");
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
+	position: absolute;
+	z-index: -6;
 }

@@ -6,33 +6,21 @@
  */
 
 import React from 'react';
-import BackgroundImage from 'gatsby-background-image';
-import { graphql, useStaticQuery } from 'gatsby';
+// import BackgroundImage from 'gatsby-background-image';
+// import { graphql, useStaticQuery } from 'gatsby';
+
+// import backgroundImage from '../images/2.png';
 
 import './layout.styles.scss';
 
 const Layout = ({ children }) => {
-	const data = useStaticQuery(graphql`
-		{
-			file(relativePath: { eq: "2.png" }) {
-				childImageSharp {
-					fluid(maxWidth: 1990) {
-						...GatsbyImageSharpFluid
-					}
-				}
-			}
-		}
-	`);
-
 	return (
-		<BackgroundImage
-			Tag="section"
-			className="production-container__background"
-			fluid={data.file.childImageSharp.fluid}
-			backgroundColor={`#040e18`}
-		>
-			<main>{children}</main>
-		</BackgroundImage>
+		<React.Fragment>
+			<div className="background__container">
+				<main>{children}</main>
+			</div>
+			{/* <img src={backgroundImage} alt="background tomas hanzlik" className="background__container-background" /> */}
+		</React.Fragment>
 	);
 };
 
