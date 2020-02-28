@@ -33,14 +33,14 @@ const IndexPage = () => {
 			id: `3`,
 			title: `Život kameramana`,
 			description: `Projekt v ktorom odhaľujem zákulisie práce kameramana, ukazujem proces tvorby videí a dávam všemožné tipy začínajúcim kameramanom.`,
-			url: `http://www.hanzlik.sk`,
+			url: `hhttps://www.youtube.com/channel/UC2_YjivupAOSCw-owoE5hGg`,
 			image: zivotKameramanaImage
 		},
 		{
 			id: `4`,
 			title: `Skautský dokument`,
 			description: `Projekt v ktorom vytvárame krátky dokumentárny film o Slovenskom skautingu.`,
-			url: `http://www.instagram.com/visualsforsale`,
+			url: `http://skautskydokument.sk/`,
 			image: dokumentImage
 		}
 	];
