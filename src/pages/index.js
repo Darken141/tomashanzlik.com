@@ -1,8 +1,6 @@
 import React from 'react';
 import SEO from '../components/seo';
-// import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
-// import ProductionCard from '../components/production_card/production_card';
 
 //IMAGES
 
@@ -45,34 +43,6 @@ const IndexPage = () => {
 		}
 	];
 
-	// const data = useStaticQuery(graphql`
-	// 	{
-	// 		site {
-	// 			siteMetadata {
-	// 				productions {
-	// 					description
-	// 					id
-	// 					title
-	// 					url
-	// 					image
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	// `);
-
-	// const { productions } = data.site.siteMetadata;
-
-	// const topRow = productions.filter((production) => {
-	// 	return production.id < 3;
-	// });
-
-	// const bottomRow = productions.filter((production) => {
-	// 	return production.id > 2;
-	// });
-
-	// console.log(hanlikImage);
-
 	return (
 		<Layout>
 			<SEO title="Produkcie" />
@@ -80,7 +50,7 @@ const IndexPage = () => {
 			<div className="container">
 				{productions.map(({ id, title, description, image, url }) => (
 					<div key={id} className="card">
-						<img src={image} alt="production image" className="card__image" />
+						<img src={image} alt={`production ${title}`} className="card__image" />
 						<h2 className="card__title">{title}</h2>
 						<p className="card__description">{description}</p>
 						<a className="card__btn" href={url} rel="noopener noreferrer" target="_blank">
@@ -94,20 +64,3 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
-
-// <div  className='production-container__background'>
-// <Img fluid={data.file.childImageSharp.fluid} className='production-container__background'/>
-// </div>
-
-{
-	/* <div className="production-container__row">
-{topRow.map(({ id, title, description, url, image }) => (
-  <ProductionCard key={id} title={title} description={description} url={url} image={image} />
-))}
-</div>
-<div className="production-container__row">
-{bottomRow.map(({ id, title, description, url, image }) => (
-  <ProductionCard key={id} title={title} description={description} url={url} image={image} />
-))}
-</div> */
-}
