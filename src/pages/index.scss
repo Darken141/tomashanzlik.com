@@ -27,6 +27,7 @@
 
 	@media all and (max-width: 1000px) {
 		grid-template-columns: repeat(1, 25rem);
+		padding-top: 5rem;
 
 		// grid-template-rows: repeat(2, minmax(30rem, 1fr));
 		grid-template-rows: repeat(1, 25rem);
