@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './production_card.styles.scss';
-
 const ProductionCard = ({ handleClick, title, description, url, image }) => {
 	return (
 		<div className={`production-card ${image}`} onClick={handleClick}>
