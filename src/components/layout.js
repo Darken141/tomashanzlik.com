@@ -7,7 +7,6 @@
 
 import React from 'react';
 import {useStaticQuery, graphql} from 'gatsby'
-import BackgroundImage from 'gatsby-background-image'
 import styled from 'styled-components'
 
 import './layout.styles.css';
@@ -21,20 +20,12 @@ const Layout = ({ children }) => {
 		}
 	`)
 
-	console.log(obrazokUrl)
-
 	return (
-		// <BackgroundImage
-		// 	Tag={`section`}
-		// 	id={`media-test`}
-		// 	// className={className}
-		// >
-			<ProductionContainer>
-				<img src={obrazokUrl} alt='pozadie'/>
-				{children}
-			</ProductionContainer>
-		// </BackgroundImage>
-  )
+		<ProductionContainer>
+			<img src={obrazokUrl} alt='pozadie'/>
+			{children}
+		</ProductionContainer>
+  	)
 };
 
 const ProductionContainer = styled.main`
