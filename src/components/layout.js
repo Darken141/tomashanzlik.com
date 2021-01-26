@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
 
 	return (
 		<ProductionContainer>
-			<img src={obrazokUrl} alt='pozadie'/>
+			<BackgroundImageFile src={obrazokUrl} alt='pozadie'/>
 			{children}
 		</ProductionContainer>
   	)
@@ -31,13 +31,13 @@ const Layout = ({ children }) => {
 
 const ProductionContainer = styled.main`
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
 
-	img{
+	/* img{
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -45,11 +45,11 @@ const ProductionContainer = styled.main`
 		left: 0;
 		top: 0;
 		bottom: 0;
-	}
+	} */
 
 	::after {
 		content: ' ';
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -59,8 +59,19 @@ const ProductionContainer = styled.main`
 	} 
 
 	@media all and (max-width: 650px) {
-		overflow-y: scroll;
+		/* overflow-y: scroll; */
+		padding: 5rem 0;
 	}
+`
+
+export const BackgroundImageFile = styled.img`
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	left: 0;
+	top: 0;
+	bottom: 0;
 `
 
 export default Layout;

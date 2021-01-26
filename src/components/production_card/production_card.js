@@ -5,7 +5,7 @@ const ProductionCard = ({ obrazokUrl, nadpis, popis, odkaz }) => {
 	return (
 		<ProductionCardContainer>
 			<ImageContainer>
-				<img src={obrazokUrl} alt={nadpis} />
+				<ImgFile src={obrazokUrl} alt={nadpis} />
 			</ImageContainer>
 			<ContentContainer>
 				<h2>{nadpis}</h2>
@@ -44,12 +44,6 @@ export const ImageContainer = styled.div`
 	height: 100%;
 	z-index: 1;
 
-	img{
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-
 	::after {
 		content: ' ';
 		position: absolute;
@@ -60,6 +54,12 @@ export const ImageContainer = styled.div`
 		background-color: rgba(0,0,0, .5);
 
 	} 
+`
+
+export const ImgFile = styled.img`
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 `
 
 export const ContentContainer = styled.div`

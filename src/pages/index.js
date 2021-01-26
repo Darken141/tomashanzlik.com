@@ -7,14 +7,20 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
 	position: relative;
-	display: flex;
+	/* display: flex; */
 	max-width: 80rem;
-	flex-wrap: wrap;
-	justify-content: center;
+	/* justify-content: center; */
 	z-index: 1;
+	/* background-color: red; */
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 
 	@media all and (max-width: 650px) {
-		height: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: unset;
+		/* height: 100%; */
 	}
 `
 
