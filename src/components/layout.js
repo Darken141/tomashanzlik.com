@@ -42,6 +42,8 @@ const ProductionContainer = styled.main`
 		height: 100%;
 		object-fit: cover;
 		left: 0;
+		top: 0;
+		bottom: 0;
 	}
 
 	::after {
