@@ -72,6 +72,7 @@ export const BackgroundImageFile = styled.img`
 	left: 0;
 	top: 0;
 	bottom: 0;
+	transition: height .3s ease-in-out;
 `
 
 export default Layout;
