@@ -36,6 +36,8 @@ const ProductionContainer = styled.main`
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+	transition: height .3s ease-in-out;
+
 
 	/* img{
 		position: absolute;
@@ -55,6 +57,7 @@ const ProductionContainer = styled.main`
 		width: 100%;
 		height: 100%;
 		background-color: rgba(0,0,0, .65);
+		
 
 	} 
 
